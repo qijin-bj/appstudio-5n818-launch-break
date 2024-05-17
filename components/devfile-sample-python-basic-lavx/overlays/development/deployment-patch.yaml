@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-lavx
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/push-pyxis-kaks-tenant/appstudio/devfile-sample-python-basic-lavx@sha256:d0893d0a63a888be6da73fc7a13ec27945829fc1c7e3d2248ec0ba316b8cf33c
+        name: my-python
+        resources: {}
+status: {}
