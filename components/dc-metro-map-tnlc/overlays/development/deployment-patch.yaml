@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-tnlc
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/push-pyxis-kaks-tenant/appstudio/dc-metro-map-tnlc@sha256:2feb2979cea825662f829f9e06b8a008a5de20b0ef91cc518ce81c31363253f0
+        name: my-nodejs
+        resources: {}
+status: {}
